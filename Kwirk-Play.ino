@@ -81,6 +81,7 @@ bool endOfLevel() {
 void completeLevel() {
 
     level.setLevelComplete(level.getLevelNumber());
+    level.setActivePlayer(0);
 
     if (level.allFloorsComplete()) {
 

@@ -100,7 +100,6 @@ void menu_Update() {
 
                     case GameState::Menu_HasSave_Opt1:
                     case GameState::Menu_NoSave_Opt1:
-                        level.setActivePlayer(0);
                         level.initMap();
                         level.loadMap(true);
                         level.setGameState_Close(level.getGameState());

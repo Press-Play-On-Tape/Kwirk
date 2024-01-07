@@ -10,6 +10,7 @@
             uint24_t startPos = FX::readIndexedUInt24(Levels, this->levelNumber);
             FX::seekData(startPos);
 
+            this->activePlayer = 0;
             this->width = FX::readPendingUInt8();
             this->height = FX::readPendingUInt8();
 
