@@ -39,6 +39,7 @@ Cookie cookie;
 uint8_t frameCount = 0;
 Level &level = cookie.level;
 bool rotorsStillTurning = false;
+SoundSettings tmpSoundSettings;
 
 void setup() {
 

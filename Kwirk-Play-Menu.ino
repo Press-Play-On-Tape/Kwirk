@@ -119,11 +119,13 @@ void menu_Update() {
                             break;
 
                         case GameState::Menu_HasSave_Opt3:
+                            saveSoundState();                            
                             FX::loadGameState(cookie);
                             level.setGameState_Close(level.getGameState());
                             level.setGameState(GameState::Play_MenuClose);
                             level.setGameState_Next(GameState::Play);
                             level.setMenuLeft(Constants::Menu_Left);
+                            restoreSoundState();
                             break;
 
                         case GameState::Menu_HasSave_Opt4:

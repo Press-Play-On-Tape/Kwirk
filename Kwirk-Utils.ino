@@ -135,3 +135,19 @@ void handleWestScroll(PlayerCanMove playerCanMove) {
 
 }
 
+
+void saveSoundState() {
+
+    tmpSoundSettings.setMusic(level.getSoundSettings().getMusic());
+    tmpSoundSettings.setSFX(level.getSoundSettings().getSFX());
+    tmpSoundSettings.setVolume(level.getSoundSettings().getVolume());
+    
+}
+
+void restoreSoundState() {
+
+    level.getSoundSettings().setMusic(tmpSoundSettings.getMusic());
+    level.getSoundSettings().setSFX(tmpSoundSettings.getSFX());
+    level.getSoundSettings().setVolume(tmpSoundSettings.getVolume());
+    
+}

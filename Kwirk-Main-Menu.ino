@@ -126,9 +126,11 @@ void title_Update() {
                 }
 
                 if (justPressed & A_BUTTON) {
+                    saveSoundState();
                     FX::loadGameState(cookie);
                     level.setGameState(GameState::Play);
                     level.setMenuLeft(Constants::Menu_Right);
+                    restoreSoundState();
                 }
 
                 break;
