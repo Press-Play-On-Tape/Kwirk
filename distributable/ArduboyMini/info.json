@@ -6,7 +6,7 @@
       "filename": "Kwirk.hex",
       "flashdata": "Kwirk-data.bin",
       "flashsave": "Kwirk-save.bin",
-      "device": "ArduboyFX"
+      "device": "ArduboyMini"
     }
   ]
 }
